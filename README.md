@@ -3,21 +3,6 @@ This library contains a bunch of things I wish were in .net from my rails days. 
 
 [NuGet Package](http://nugetstatus.com/packages/Rubyish)
 
-## DateTime
-
-```cs
-var dt = new DateTime();
-
-// Should return an int like 912312312 representing the time in seconds since the unix epoch
-dt.ToTimeStamp(); 
-
-// Converts this datetime object from EST to UTC
-dt.EstToUtc(); 
-
-// Converts this datetime object to EST
-dt.ToEst(); 
-``` 
-
 ## Enumerable
 ```cs
 var list = new List<string>();
@@ -44,7 +29,7 @@ obj.RespondsTo("Quack");
 obj.Properties();
 
 // Return all the methods on this object.  Returns MethodInfo[]
-obj.Properties();
+obj.Methods();
 ```
 
 ## Json stuff
@@ -202,6 +187,21 @@ Types.First("Duck");
 Types.Find("Duck");
 
 ```
+
+## DateTime
+
+```cs
+var dt = new DateTime();
+
+// Should return an int like 912312312 representing the time in seconds since the unix epoch
+dt.ToTimeStamp(); 
+
+// Converts this datetime object from EST to UTC
+dt.EstToUtc(); 
+
+// Converts this datetime object to EST
+dt.ToEst(); 
+``` 
 
 ## Unix timespan stuff
 

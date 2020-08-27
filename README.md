@@ -46,7 +46,6 @@ var duck = duckInJson.FromJson<Duck>();
 
 ## Sending messages to objects
 ```cs
-// Serialize this duck into a json string.  Returns JSON.
 var duck = new Duck();
 
 // Call the Quack method if its on the duck.

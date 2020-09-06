@@ -3,6 +3,27 @@ This library contains a bunch of things I wish were in .net from my rails days. 
 
 [NuGet Package](https://www.nuget.org/packages/Rubyish/)
 
+## DateTime
+
+```cs
+var dt = new DateTime();
+
+// Should return an int like 912312312 representing the time in seconds since the unix epoch
+dt.ToTimeStamp(); 
+
+// Converts this datetime object from EST to UTC
+dt.EstToUtc(); 
+
+// Converts this datetime object to EST
+dt.ToEst(); 
+
+// Get the start of the Day
+DateTime.Now.StartOfDay();
+
+// Get the end of the Day
+DateTime.Now.StartOfDay();
+``` 
+
 ## Enumerable
 ```cs
 var list = new List<string>();

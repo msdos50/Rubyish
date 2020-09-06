@@ -21,7 +21,7 @@ dt.ToEst();
 DateTime.Now.StartOfDay();
 
 // Get the end of the Day
-DateTime.Now.StartOfDay();
+DateTime.Now.EndOfDay();
 ``` 
 
 ## Enumerable

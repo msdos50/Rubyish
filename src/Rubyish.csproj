@@ -11,7 +11,8 @@
         <PackageProjectUrl>https://github.com/msdos621/Rubyish</PackageProjectUrl>
         <PackageLicenseUrl>https://github.com/msdos621/Rubyish/blob/main/LICENSE</PackageLicenseUrl>
         <RepositoryUrl>https://github.com/msdos621/Rubyish</RepositoryUrl>
-        <RepositoryType>GitHub</RepositoryType>
+        <RepositoryType>git</RepositoryType>
+        <PackageTags>csharp;ruby;reflection</PackageTags>
     </PropertyGroup>
 
     <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Debug|AnyCPU' ">

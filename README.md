@@ -14,6 +14,12 @@ dt.EstToUtc();
 
 // Converts this datetime object to EST
 dt.ToEst(); 
+
+// Get the start of the Day
+DateTime.Now.StartOfDay();
+
+// Get the end of the Day
+DateTime.Now.StartOfDay();
 ``` 
 
 ## Enumerable

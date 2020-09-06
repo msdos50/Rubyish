@@ -1,6 +1,8 @@
 # Rubyish
 This library contains a bunch of things I wish were in .net from my rails days.  It is not necessarily following good .net conventions but it does make writing some kinds of code more fun.  If you choose to use .net in this fashion (lots of sending messages and dynamically calling methods) you are losing compiler protection.  **You have been warned**
 
+[NuGet Package](https://www.nuget.org/packages/Rubyish/)
+
 ## DateTime
 
 ```cs
@@ -48,7 +50,7 @@ obj.RespondsTo("Quack");
 obj.Properties();
 
 // Return all the methods on this object.  Returns MethodInfo[]
-obj.Properties();
+obj.Methods();
 ```
 
 ## Json stuff
@@ -65,7 +67,6 @@ var duck = duckInJson.FromJson<Duck>();
 
 ## Sending messages to objects
 ```cs
-// Serialize this duck into a json string.  Returns JSON.
 var duck = new Duck();
 
 // Call the Quack method if its on the duck.
@@ -206,6 +207,21 @@ Types.First("Duck");
 Types.Find("Duck");
 
 ```
+
+## DateTime
+
+```cs
+var dt = new DateTime();
+
+// Should return an int like 912312312 representing the time in seconds since the unix epoch
+dt.ToTimeStamp(); 
+
+// Converts this datetime object from EST to UTC
+dt.EstToUtc(); 
+
+// Converts this datetime object to EST
+dt.ToEst(); 
+``` 
 
 ## Unix timespan stuff
 

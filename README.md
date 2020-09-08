@@ -208,21 +208,6 @@ Types.Find("Duck");
 
 ```
 
-## DateTime
-
-```cs
-var dt = new DateTime();
-
-// Should return an int like 912312312 representing the time in seconds since the unix epoch
-dt.ToTimeStamp(); 
-
-// Converts this datetime object from EST to UTC
-dt.EstToUtc(); 
-
-// Converts this datetime object to EST
-dt.ToEst(); 
-``` 
-
 ## Unix timespan stuff
 
 ```cs

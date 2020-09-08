@@ -3,6 +3,19 @@ This library contains a bunch of things I wish were in .net from my rails days. 
 
 [NuGet Package](https://www.nuget.org/packages/Rubyish/)
 
+## Installation
+
+# Add the package
+```
+dotnet add package Rubyish --version 1.1.0
+```
+# Import the namespace
+```
+using Rubyish;
+```
+
+# See below
+
 ## DateTime
 
 ```cs

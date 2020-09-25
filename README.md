@@ -1,5 +1,5 @@
 # Rubyish
-This library contains a bunch of things I wish were in .net from my rails days.  It is not necessarily following good .net conventions but it does make writing some kinds of code more fun.  If you choose to use .net in this fashion (lots of sending messages and dynamically calling methods) you are losing compiler protection.  **You have been warned**
+This library contains a bunch of things I wish were in .net from my rails days.  It make writing some kinds of code more fun.  If you choose to use .net in this fashion (lots of sending messages and dynamically calling methods) you are losing compiler protection.  **You have been warned**
 
 [NuGet Package](https://www.nuget.org/packages/Rubyish/)
 

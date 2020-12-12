@@ -41,6 +41,19 @@ namespace RubyishTests
         }
         
         [Fact]
+        public void StartOfHour_ReturnsDTAtStartOfHour()
+        {
+            var dt = new DateTime(2020, 01, 01, 12, 5, 7);
+            dt.StartOfHour().Year.Should().Be(2020);
+            dt.StartOfHour().Month.Should().Be(1);
+            dt.StartOfHour().Day.Should().Be(1);
+            dt.StartOfHour().Hour.Should().Be(12);
+            dt.StartOfHour().Minute.Should().Be(0);
+            dt.StartOfHour().Second.Should().Be(0);
+            dt.StartOfHour().Millisecond.Should().Be(0);
+        }
+        
+        [Fact]
         public void ToTimestamp_ReturnsDateInUnixFormat()
         {
             var dt = new DateTime(2000, 01, 01, 0, 0, 0);

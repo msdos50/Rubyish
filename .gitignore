@@ -363,3 +363,4 @@ obj
 **/obj/Debug/*
 **/bin/Release/*
 **/obj/Release/*
+pkg/*

@@ -32,6 +32,14 @@ namespace Rubyish
         }
         
         /// <summary>
+        /// Converts date to start of this hour
+        /// </summary>
+        public static DateTime StartOfHour(this DateTime incoming)
+        {
+            return new DateTime(incoming.Year, incoming.Month, incoming.Day, incoming.Hour, 0, 0, 0);
+        }
+        
+        /// <summary>
         /// Return a double representing this datetime in unix epoch format
         /// </summary>
         public static double ToTimeStamp(this DateTime dateTime)

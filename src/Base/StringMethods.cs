@@ -7,6 +7,14 @@ namespace Rubyish
         /// <summary>
         /// Return a boolean version of this string
         /// </summary>
+        public static bool to_b(this String str)
+        {
+            return str.ToBoolean();
+        }
+        
+        /// <summary>
+        /// Return a boolean version of this string
+        /// </summary>
         public static bool ToBoolean(this String str)
         {
             var b = false;

@@ -7,7 +7,7 @@ This library contains a bunch of things I wish were in .net from my rails days. 
 
 ### Add the package
 ```
-dotnet add package Rubyish --version 1.1.0
+dotnet add package Rubyish --version 1.2.0
 ```
 ### Import the namespace
 ```

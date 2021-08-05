@@ -167,7 +167,9 @@ string str = "some value";
 str.Present();
 
 // Returns an integer value or 0 if unparsable
-
+"Hello".ToInteger() // 0
+"13".to_i() // 13
+"13".ToInteger() // 13
 ```
 
 ## Time related methods

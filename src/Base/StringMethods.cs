@@ -24,6 +24,27 @@ namespace Rubyish
             }
             return b;
         }
+        
+        /// <summary>
+        /// Return an integer version of this string
+        /// </summary>
+        public static int ToInteger(this String str)
+        {
+            var i = 0;
+            if (!String.IsNullOrEmpty(str))
+            {
+                int.TryParse(str, out i);
+            }
+            return i;
+        }
+        
+        /// <summary>
+        /// Return an integer version of this string
+        /// </summary>
+        public static int to_i(this String str)
+        {
+            return str.ToInteger();
+        }
 
         /// <summary>
         /// Is this string present?

@@ -68,6 +68,34 @@ namespace RubyishTests
             string s = "true";
             s.ToBoolean().Should().BeTrue();
         }
+        
+        [Fact]
+        public void ToI_WhenPassedANumber_ReturnsThatNumber()
+        {
+            string s = "1312";
+            s.to_i().Should().Be(1312);
+        }
+        
+        [Fact]
+        public void ToInteger_WhenPassedANumber_ReturnsThatNumber()
+        {
+            string s = "1312";
+            s.ToInteger().Should().Be(1312);
+        }
+        
+        [Fact]
+        public void ToInteger_WhenPassedBlank_ReturnsZero()
+        {
+            string s = "";
+            s.ToInteger().Should().Be(0);
+        }
+        
+        [Fact]
+        public void ToInteger_WhenPassedSomethingNotANumber_ReturnsZero()
+        {
+            string s = "hello";
+            s.ToInteger().Should().Be(0);
+        }
 
         [Fact]
         public void Present_WhenPassedNull_ReturnsFalse()

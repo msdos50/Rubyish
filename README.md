@@ -156,6 +156,7 @@ str.IsTrue();
 // Returns the boolean representation of this string
 string str = "false";
 str.ToBoolean();
+str.to_b();
 
 // Returns a boolean value true if the string is anything other than empty or null
 string str = "some value";
@@ -164,6 +165,9 @@ str.Present();
 // Returns a boolean value true if the string is empty or null
 string str = "some value";
 str.Present();
+
+// Returns an integer value or 0 if unparsable
+
 ```
 
 ## Time related methods
